@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raga Sudha Dasari | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f9fafb;
+      color: #1f2937;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(90deg, #1e3a8a, #9333ea);
+      color: white;
+      padding: 20px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #d1d5db;
+    }
+
+    .graphic-banner {
+      background: linear-gradient(to right, #3b82f6, #9333ea);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: bold;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 40px;
+      margin: 40px 0;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    h2, h3 {
+      color: #1e40af;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    form button {
+      background: #1e3a8a;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    form button:hover {
+      background: #111827;
+    }
+
+    footer {
+      background: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header data-aos="fade-down">
+    <h1>Raga Sudha Dasari</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="graphic-banner">
+    Welcome to My Portfolio
+  </div>
+
+  <section id="about" data-aos="fade-up">
+    <div class="card">
+      <h2>About Me</h2>
+      <p>Hello! I'm <strong>Raga Sudha Dasari</strong>, a passionate and skilled professional with expertise in both technology and management. With academic excellence in BCA and MBA, I merge technical know-how with strategic thinking to build beautiful, functional websites. I love crafting intuitive digital experiences that solve real problems.</p>
+    </div>
+  </section>
+
+  <section id="education" data-aos="fade-right">
+    <div class="card">
+      <h2>Educational Qualifications</h2>
+      <ul>
+        <li><strong>BCA</strong> - Bachelor of Computer Applications</li>
+        <li><strong>MBA</strong> - Master of Business Administration</li>
+        <li><strong>Aggregate:</strong> 83%</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills" data-aos="fade-left">
+    <div class="card">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> Python, Java, C</li>
+        <li><strong>Database:</strong> SQL</li>
+        <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript</li>
+        <li><strong>Tools:</strong> Git, Visual Studio Code</li>
+        <li><strong>Other Skills:</strong> Responsive Design, Debugging, Team Collaboration, Documentation</li>
+      </ul>
+    </div>
+    <div class="card" data-aos="zoom-in">
+      <h3>Awards & Recognition</h3>
+      <ul>
+        <li>🏆 Best HR Employee Award</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects" data-aos="zoom-in-up">
+    <div class="card">
+      <h2>Projects</h2>
+      <p>Portfolio Projects coming soon. Stay tuned for exciting case studies showcasing real-world solutions and interactive web applications!</p>
+    </div>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <div class="card">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p id="thankYouMsg" style="display:none; color: green; margin-top: 10px;">Thank you for reaching out!</p>
+    </div>
+  </section>
+
+  <footer data-aos="fade-in">
+    <p>&copy; 2025 Raga Sudha Dasari | All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      document.getElementById('thankYouMsg').style.display = 'block';
+      this.reset();
+    });
+  </script>
+</body>
+
+</html>
